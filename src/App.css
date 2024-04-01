@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+
+
+/*customized*/
+.container {
+  margin: 20px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.input-field {
+  width: 300px;
+  margin-right: 10px;
+}
+
+.button {
+  padding: 10px;
+}
+
+.output {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.output p {
+  white-space: pre-wrap;
+}

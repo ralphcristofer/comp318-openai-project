@@ -21,10 +21,14 @@ function App() {
   };
 
   return (
-    <div>
-      <input type="text" value={inputText} onChange={handleInputChange} />
-      <button onClickCapture={handleButtonClick}></button>
-      <p>Output: {outputText}</p>
+    <div className="container">
+      <h1>COMP318-402-W24 Group 3 OpenAI Generator</h1>
+      <input type="text" value={inputText} onChange={handleInputChange} className="input-field" />
+      <button onClickCapture={handleButtonClick} className="button">Generate</button>
+      <div className="output">
+        <p>Output:</p>
+        <p>{outputText}</p>
+      </div>
     </div>
   );
 };
