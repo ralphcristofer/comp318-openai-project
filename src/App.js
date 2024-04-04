@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 
-// Importing the view components
-// This is to separate menus and to organize pages easier
-// I'm creating at least 6 menus for now based on prompt example categories
+// Importing individual components for each menu/page in the application
 import HomePage from './components/HomePage';
 import Extract from './components/Extract';
 import Generate from './components/Generate';
@@ -11,10 +9,12 @@ import Code from './components/Code';
 import NaturalLanguage from './components/NaturalLanguage';
 import StructuredData from './components/StructuredData';
 
-
+// Main App Component
 function App() {
+  // State hook for tracking the current view in the application
   const [currentView, setCurrentView] = useState('home');
 
+  // Function to check which component to render based on the current view
   const pageView = () => {
     switch (currentView) {
       case 'extract':
@@ -34,6 +34,7 @@ function App() {
     }
   };
 
+  // Renders the application interface
   return (
     <div className="container">
       <nav>
@@ -45,6 +46,7 @@ function App() {
         <button onClick={() => setCurrentView('naturalLanguage')}>Natural Language</button>
         <button onClick={() => setCurrentView('structuredData')}>Structured Data</button>
       </nav>
+      {/* Display the component based on the current view */}
       {pageView()}
     </div>
   );
