@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-// Generate Component is responsible for interfacing with OpenAI API to generate text based on user input
+// Summarizer Component is responsible for interfacing with OpenAI API to generate text based on user input
 function Summarizer() {
   // useState hook to manage the input text from the user
   const [inputText, setInputText] = useState('');
@@ -14,7 +14,7 @@ function Summarizer() {
 
   // Event handler for button click to trigger the generation
   const handleButtonClick = async () => {
-    // Send POST request to backend '/generate' endpoint
+    // Send POST request to backend '/summarizer' endpoint
     const respose = await fetch('/summarizer', {
       method: 'POST',
       headers: {
@@ -26,16 +26,16 @@ function Summarizer() {
     });
     // Parse the JSON response from the server
     const data = await respose.json();
-    // Update the outputText state with the generated text
+    // Update the outputText state with the summarized text
     setOutputText(data.result);
   };
 
-  // Render the Generate component UI
+  // Render the Summarizer component UI
   return (
     <div className="container">
-      <h1>Generate</h1>
-      <input type="text" value={inputText} onChange={handleInputChange} className="input-field" />
-      <button onClickCapture={handleButtonClick} className="button">Generate</button>
+      <h1>Summarizer</h1>
+      <textarea value={inputText} onChange={handleInputChange} className="input-field" style={{height: '200px', width: '400px'}} />
+      <button onClickCapture={handleButtonClick} className="button">Summarize</button>
       <div className="output">
         <p>Output:</p>
         <p>{outputText}</p>
