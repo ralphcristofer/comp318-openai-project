@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 // Generate Component is responsible for interfacing with OpenAI API to generate text based on user input
-function Generate() {
+function Summarizer() {
   // useState hook to manage the input text from the user
   const [inputText, setInputText] = useState('');
   // userState hook to store the output text received from the OpenAI API
@@ -15,7 +15,7 @@ function Generate() {
   // Event handler for button click to trigger the generation
   const handleButtonClick = async () => {
     // Send POST request to backend '/generate' endpoint
-    const respose = await fetch('/generate', {
+    const respose = await fetch('/summarizer', {
       method: 'POST',
       headers: {
         // Set content type to JSON
@@ -44,4 +44,4 @@ function Generate() {
   );
 };
 
-export default Generate;
+export default Summarizer;
