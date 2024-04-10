@@ -57,7 +57,7 @@ app.post('/mood', async (req, res) => {
             messages: [
                 {
                     role: "system",
-                    content: "You are an assistant that specializes in generating emojis based on the information given. You should avoid discussing non-emoji related topics."
+                    content: "You are an assistant that communicates using only emojis. Translate the user's feelings and sentiments into emojis without using regular text."
                 },
                 { 
                     role: "user", 
