@@ -30,6 +30,7 @@ function App() {
 
   // Renders the application interface
   return (
+    <div>
     <div className="container">
       <nav>
         <button onClick={() => setCurrentView('home')}>Home</button>
@@ -40,7 +41,16 @@ function App() {
       </nav>
       {/* Display the component based on the current view */}
       {pageView()}
+      
     </div>
+    <footer>
+    <p>
+      &copy; Comp311 UI Devices
+      <br/>
+      Anne Mistry, Ralph Cristofer Fugaban, Shinumol Sebastian, Nusratullah Mohammadi
+    </p>
+  </footer>
+  </div>
   );
 }
 
