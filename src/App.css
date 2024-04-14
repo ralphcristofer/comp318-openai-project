@@ -63,3 +63,8 @@
 .output p {
   white-space: pre-wrap;
 }
+
+p{
+  font-size: medium;
+  padding-left: 150px;
+}

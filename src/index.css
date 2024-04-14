@@ -1,11 +1,15 @@
-body {
-  margin: 0;
-  
+html,body {
+  background-image: linear-gradient(rgb(208, 255, 255),antiquewhite);
+  height:100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right:auto;
+
 }
 
 code {
@@ -14,24 +18,71 @@ code {
 }
 
 .container{
-  min-height: 100vh;
-  background-image: linear-gradient(rgb(208, 255, 255),antiquewhite);
-  align-self: center;
-  align-items: center;
+  height:100%;
+  min-height: 100%;
   text-align: center;
+}
+
+.container p{
+  text-align: left;
+  padding-left:45px;
 }
 
 h1{
   text-align: center;
+  color:rgb(70, 7, 0);
 }
 
 footer{
   position: absolute;
-    bottom: 0;
-    height: 100px;
-  text-size: 10px;
+  bottom: 0;
 }
 
 footer p{
   font-size: 15px;
+  padding-left: 20px;
 }
+
+.button{
+  background-color: rgb(70, 7, 0); /* Brown */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+}
+
+.button:hover{
+  color:rgb(208, 255, 255);
+  cursor:pointer;
+}
+
+nav button{
+
+  background-color: rgb(37, 4, 0);
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border: none;
+  
+}
+
+nav{
+  background-color: rgb(37, 4, 0);
+  padding-left:53%;
+}
+
+nav button:hover{
+  color:rgb(208, 255, 255);
+  cursor:pointer;
+}
+
+#content{
+  padding-left: 20px;
+}
+

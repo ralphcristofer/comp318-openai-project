@@ -30,7 +30,7 @@ function App() {
 
   // Renders the application interface
   return (
-    <div>
+    <div id="gather">
     <div className="container">
       <nav>
         <button onClick={() => setCurrentView('home')}>Home</button>
@@ -45,7 +45,7 @@ function App() {
     </div>
     <footer>
     <p>
-      &copy; Comp311 UI Devices
+      &copy; April 2024 Comp311 UI Smart Devices
       <br/>
       Anne Mistry, Ralph Cristofer Fugaban, Shinumol Sebastian, Nusratullah Mohammadi
     </p>
