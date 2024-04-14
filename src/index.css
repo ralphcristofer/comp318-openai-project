@@ -12,6 +12,14 @@ html,body {
 
 }
 
+.HomeContent p{
+  text-align: left;
+  padding-left: 45px;
+  font-size: 20px;
+  font-family:  Arial, sans-serif;
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -23,10 +31,7 @@ code {
   text-align: center;
 }
 
-.container p{
-  text-align: left;
-  padding-left:45px;
-}
+
 
 h1{
   text-align: center;
@@ -82,7 +87,6 @@ nav button:hover{
   cursor:pointer;
 }
 
-#content{
-  padding-left: 20px;
+p{
+  font-size:20px;
 }
-

@@ -58,13 +58,12 @@
   margin-top: 20px;
   border: 1px solid #ccc;
   padding: 10px;
+  font-size: large;
 }
 
 .output p {
   white-space: pre-wrap;
+  font-size: larger;
+  line-height: 1.2em;
 }
 
-p{
-  font-size: medium;
-  padding-left: 150px;
-}
