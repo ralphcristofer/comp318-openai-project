@@ -40,6 +40,7 @@ function App() {
       </nav>
       {/* Display the component based on the current view */}
       {pageView()}
+      
     </div>
   );
 }

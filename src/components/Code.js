@@ -35,6 +35,7 @@ function Code() {
     <div className="container">
       <h1>Ask something about coding</h1>
       <textarea value={inputText} onChange={handleInputChange} className="input-field" style={{height: '100px', width: '400px'}} />
+      <br/>
       <button onClickCapture={handleButtonClick} className="button">Code It</button>
       <div className="output">
         <p>Output:</p>

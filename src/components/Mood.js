@@ -35,6 +35,7 @@ function Mood() {
     <div className="container">
       <h1>What's your mood today?</h1>
       <textarea value={inputText} onChange={handleInputChange} className="input-field" style={{height: '50px', width: '400px'}} />
+      <br />
       <button onClickCapture={handleButtonClick} className="button">Moodify</button>
       <div className="output">
         <p>Output:</p>

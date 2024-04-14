@@ -39,9 +39,7 @@
 
 
 /*customized*/
-.container {
-  margin: 20px;
-}
+
 
 .title {
   margin-bottom: 20px;
@@ -64,4 +62,9 @@
 
 .output p {
   white-space: pre-wrap;
+  font-size: larger;
+  line-height: 1.5em;
+  text-align: left;
+  width: 50%;
 }
+
