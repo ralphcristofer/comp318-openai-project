@@ -1,3 +1,9 @@
+/*
+Comp 318 sec 402
+Author: Ralph
+Modified by: Anne
+*/
+
 import React from 'react';
 
 

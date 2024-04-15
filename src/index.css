@@ -1,3 +1,10 @@
+/*
+Comp 318 sec 402
+Author: Ralph
+Modified by: Anne
+*/
+
+/*helps the height of the webpage and sets the background gradient*/
 html{
 
   background-image: linear-gradient(rgb(208, 255, 255),antiquewhite);
@@ -19,6 +26,15 @@ body {
 
 }
 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*this only affects the HomePage <p>*/
+.HomeContent{
+  min-height: 100%;
+}
 .HomeContent p{
   
   text-align: left;
@@ -27,21 +43,14 @@ body {
   font-family:  Arial, sans-serif;
 }
 
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
+/*for the contents of the rest of the pages, sets min height and text aligned to center*/
 .container{
   min-height: 100%;
   text-align: center;
 }
 
-.HomeContent{
-  min-height: 100%;
-}
 
+/*root div height to help the footer stay at bottom*/
 #root{
   min-height:90vh;
 }
@@ -51,6 +60,7 @@ h1{
   color:rgb(70, 7, 0);
 }
 
+/*footer set to be at the bottom of root and fot*/
 footer{
   position: relative;
   bottom:0%;
@@ -62,6 +72,7 @@ footer p{
   padding-left: 20px;
 }
 
+/*all buttons if not specified later*/
 .button{
   background-color: rgb(70, 7, 0); /* Brown */
   border: none;
@@ -79,6 +90,14 @@ footer p{
   cursor:pointer;
 }
 
+
+/*nav bar style + navbar buttons*/
+
+nav{
+  background-color: rgb(37, 4, 0);
+  padding-left:53%;
+}
+
 nav button{
 
   background-color: rgb(37, 4, 0);
@@ -91,16 +110,12 @@ nav button{
   
 }
 
-nav{
-  background-color: rgb(37, 4, 0);
-  padding-left:53%;
-}
-
 nav button:hover{
   color:rgb(208, 255, 255);
   cursor:pointer;
 }
 
+/*general p especially impacts the output text*/
 p{
   font-size:25px;
   text-align: left;

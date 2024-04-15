@@ -1,3 +1,8 @@
+/*
+Comp 318 sec 402
+Author: Ralph
+*/
+
 import { render, screen } from '@testing-library/react';
 import App from './App';
 

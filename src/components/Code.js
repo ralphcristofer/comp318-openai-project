@@ -1,3 +1,7 @@
+/*
+Comp 318 sec 402
+Author: Ralph
+*/
 import React, { useState } from "react";
 
 // Code Component is responsible for interfacing with OpenAI API to generate codes based on user input

@@ -1,3 +1,8 @@
+/*
+Comp 318 sec 402
+Author: Ralph
+*/
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';

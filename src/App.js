@@ -1,3 +1,7 @@
+/*
+Comp 318 sec 402
+Author: Ralph
+*/
 import React, { useState } from "react";
 
 // Importing individual components for each menu/page in the application
